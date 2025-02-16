@@ -25,7 +25,6 @@ Make sure you have **Node.js** and **npm** installed on your system.
 ### Clone the Repository
 ```sh
 git clone https://github.com/your-repo/frontend.git
-cd frontend
 ```
 
 ### Install Dependencies

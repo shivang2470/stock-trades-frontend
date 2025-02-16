@@ -133,30 +133,6 @@ export const handleAddTrade = async (data) => {
 };
 ```
 
----
-
-## Running Tests
-To run unit tests for the frontend:
-```sh
-npm test
-```
-
----
-
-## Deployment
-To build and deploy the project:
-```sh
-npm run build
-```
-The production-ready build will be in the `build` directory.
-
----
-
-## License
-This project is licensed under the **MIT License**.
-
----
-
 ## Author
 Developed by **Shivang Srivastava** 🚀
 

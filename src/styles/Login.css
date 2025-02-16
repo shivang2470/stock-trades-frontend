@@ -1,0 +1,99 @@
+/* Centering the entire page */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom right, #2c3e50, #8e44ad);
+    padding: 20px;
+  }
+  
+  /* Login Card */
+  .login-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    padding: 30px;
+    width: 400px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+  }
+  
+  /* Title */
+  .login-card h2 {
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  /* Input Fields */
+  .input-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; /* Centers all fields */
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  
+  .input-group input {
+    width: 90%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 15px;
+    background: rgba(255, 255, 255, 0.9);
+    color: #333;
+    outline: none;
+    text-align: center; /* Centers the text inside input */
+    transition: 0.3s ease-in-out;
+  }
+  
+  .input-group input:focus {
+    border-color: #8e44ad;
+    box-shadow: 0 0 5px rgba(142, 68, 173, 0.5);
+  }
+  
+  /* Login Button */
+  .login-btn {
+    width: 90%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(to right, #8e44ad, #3498db);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+  }
+  
+  .login-btn:hover {
+    background: linear-gradient(to right, #3498db, #8e44ad);
+    transform: scale(1.05);
+  }
+  
+  /* Forgot Password */
+  .forgot-password {
+    margin-top: 15px;
+    color: #ddd;
+    font-size: 14px;
+  }
+  
+  .forgot-password span {
+    color: #fff;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  
+  .forgot-password span:hover {
+    color: #f1c40f;
+  }
+  
+  /* Error Message */
+  .error-text {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  

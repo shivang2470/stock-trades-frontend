@@ -1,0 +1,289 @@
+.home-container {
+    padding: 40px;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #1a1a2e, #16213e);
+    color: white;
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Title */
+.title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Button Container */
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+/* Add Trade Button */
+.add-trade-button {
+    background: linear-gradient(45deg, #4b6cb7, #182848);
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    transition: 0.3s;
+}
+
+.add-trade-button:hover {
+    background: #4b6cb7;
+}
+
+/* Logout Container */
+.logout-container {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+}
+
+/* Logout Button */
+.logout-button {
+    background: red;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.logout-button:hover {
+    background: darkred;
+}
+
+/* Table Container */
+.table-container {
+    width: 100%;
+    max-width: 900px;
+    overflow-x: auto;
+}
+
+/* Trade Table */
+.trade-table {
+    background: #2b2b4f;
+    border-radius: 8px;
+    padding: 10px;
+    width: 100%;
+}
+
+/* Loading & Empty Container */
+.loading-container,
+.empty-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+
+/* Trade Modal */
+.trade-modal {
+    border-radius: 8px;
+}
+
+/* Modal Title */
+.modal-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #16213e;
+}
+
+/* Modal Content */
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Input Fields */
+.input-field {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Modal Buttons */
+.modal-cancel {
+    background: gray;
+    color: white;
+}
+
+.modal-submit {
+    background: #4b6cb7;
+    color: white;
+}
+
+/* Buy & Sell Tag Styles */
+.type-buy {
+    background: green;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+}
+
+.type-sell {
+    background: red;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+}
+
+/* Type Filter Container */
+.filter-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+/* Filter Container */
+.filter-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+/* Filter Label */
+.filter-label {
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+}
+
+/* Styled Native Select */
+.type-filter,
+.select-field {
+    width: 150px;
+    height: 40px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    border: 2px solid #4b6cb7;
+    background: #16213e;
+    color: white;
+    padding: 5px;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Dropdown Hover & Focus Effects */
+.type-filter:hover,
+.select-field:hover,
+.type-filter:focus,
+.select-field:focus {
+    border-color: #4b6cb7;
+    background: #1a1a2e;
+}
+
+/* Option Styling */
+.type-filter option,
+.select-field option {
+    background: #2b2b4f;
+    color: white;
+    font-weight: bold;
+}
+
+
+
+/* =================== RESPONSIVENESS =================== */
+
+@media (max-width: 768px) {
+    .home-container {
+        padding: 20px;
+    }
+
+    /* Center Logout Button for Mobile */
+    .logout-container {
+        position: static;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .logout-button {
+        width: 100%;
+        max-width: 200px;
+        text-align: center;
+    }
+
+    /* Stack Buttons for Mobile */
+    .button-container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .add-trade-button {
+        width: 100%;
+        max-width: 200px;
+    }
+
+    /* Table Scroll for Small Screens */
+    .table-container {
+        overflow-x: auto;
+    }
+
+    .trade-table {
+        font-size: 14px;
+        min-width: 600px;
+    }
+
+    /* Make Modal Fields Full Width */
+    .modal-content .input-field {
+        width: 100%;
+    }
+}
+
+/* Ensure table takes full width on laptop screens */
+@media (min-width: 1024px) {
+    .table-container {
+        max-width: 1200px; /* Increase max width for laptops */
+        width: 100%;
+    }
+
+    .trade-table {
+        width: 100%;
+        font-size: 16px; /* Keep font readable */
+    }
+
+    /* Adjust button spacing */
+    .button-container {
+        gap: 15px; /* Adds space between buttons */
+    }
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    gap: 5px; /* Increased spacing for better alignment */
+}
+
+/* Make input fields and select dropdowns uniform */
+.modal-content .input-field {
+    width: 100%;  /* Take full width */
+    padding: 6px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem; /* Maintain readability */
+}
+
+/* Fix alignment for Select dropdown */
+.ant-select-selector {
+    width: 100% !important;
+    height: 20px !important;
+    display: flex;
+    align-items: center;
+    border-radius: 0px !important;
+}
